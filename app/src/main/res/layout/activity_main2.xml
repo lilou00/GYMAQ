@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/white"
+        android:id="@+id/my_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#24C764"
+        android:elevation="4dp"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/linearMain"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gymName"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Geym Name"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topCard"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FDFDFD" >
+                    <TextView
+                        android:translationZ="90dp"
+                        android:layout_marginStart="-7dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Qualité de l'air"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/size"
+                        android:layout_gravity="center"
+                        android:layout_width="240dp"
+                        android:layout_height="140dp" />
+                    <ImageView
+                       android:rotation="-40"
+                        android:layout_marginStart="-12dp"
+                        android:layout_marginTop="-80dp"
+                        android:background="@drawable/arrow"
+                        android:layout_gravity="center"
+                        android:layout_width="42dp"
+                        android:layout_height="62dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="7dp"
+                        app:cardBackgroundColor="#FDFDFD"
+                       android:layout_marginTop="-23dp"
+                        android:layout_gravity="end"
+                        android:padding="5dp"
+                        android:layout_width="62dp"
+                        android:layout_height="24dp" >
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="27.50"
+                                android:textSize="17sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" C°"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="185dp"
+                    android:layout_height="185dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#EFEEE9"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:id="@+id/o2Li"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:text="O3"
+                            android:textColor="#111"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/O2text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="1dp"
+                            android:text="L'ozone est un gaz polluant affectant la santé respiratoire."
+                            android:textColor="#656565"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/t11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="9dp"
+                                android:text="73.93"
+                                android:textColor="#111"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="ppm"
+                                android:textColor="#111"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="185dp"
+                    android:layout_height="185dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#EFEEE9"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:text="CO2"
+                            android:textColor="#111"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cO2text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Le dioxyde de carbone en haute concentration est un polluant toxique"
+                            android:textColor="#656565"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/t22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:text="439"
+                            android:textColor="#111"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="ppm"
+                            android:textColor="#111"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="185dp"
+                    android:layout_height="185dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="#EFEEE9"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:text="PM2.5"
+                            android:textColor="#111"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dusttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Les particules fines pouvant pénétrer profondément dans les poumons et affecter la santé."
+                            android:textColor="#656565"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/t33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:text="17.90"
+                            android:textColor="#111"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="µg/m3"
+                            android:textColor="#111"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="185dp"
+                    android:layout_height="185dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#EFEEE9"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="7dp"
+                            android:text="Humidite"
+                            android:textColor="#111"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/humuditytext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="1dp"
+                            android:text="L'humidité influence le confort humain et la propagation de certains polluants atmosphériques."
+                            android:textColor="#656565"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/t44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:text="61"
+                            android:textColor="#111"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:text="%"
+                            android:textColor="#111"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#EFEEE9"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="7dp"
+                        android:text="CO"
+                        android:textColor="#111"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/othertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Le monoxyde de carbone est un gaz inodore qui peut être dangereux pour la santé."
+                        android:textColor="#656565"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="274.40"
+                        android:textColor="#111"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="%"
+                        android:textColor="#111"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
